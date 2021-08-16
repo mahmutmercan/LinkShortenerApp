@@ -88,11 +88,11 @@
 			isa = PBXGroup;
 			children = (
 				85B80CFE26CA42DB00A74743 /* CoreData */,
+				858AE6B326CA4E7100C4AA5F /* AnimationFile */,
 				85B454E726C52B5A004DA119 /* Model */,
 				85B80D0026CA438B00A74743 /* View */,
 				85B454E626C52B55004DA119 /* Controller */,
 				85B80D0226CA44EE00A74743 /* Application */,
-				85B454EB26C52C42004DA119 /* Data */,
 				8560D11926BBB8EA00111F79 /* Main.storyboard */,
 				8560D11C26BBB8EA00111F79 /* Assets.xcassets */,
 				8560D11E26BBB8EA00111F79 /* LaunchScreen.storyboard */,
@@ -100,6 +100,17 @@
 				85B454A426C28D41004DA119 /* LinkShortenerDataModel.xcdatamodeld */,
 			);
 			path = LinkShortenerApp;
+			sourceTree = "<group>";
+		};
+		858AE6B326CA4E7100C4AA5F /* AnimationFile */ = {
+			isa = PBXGroup;
+			children = (
+				856A372626C65DA000450A63 /* 38213-error.json */,
+				85F914B226BD0BB10065F6DF /* 47289-digital-marketing.json */,
+				85B454E026C3E80B004DA119 /* 9619-loading-dots-in-yellow.json */,
+				85B454E326C40667004DA119 /* 14906-loading-amimation.json */,
+			);
+			path = AnimationFile;
 			sourceTree = "<group>";
 		};
 		85B454E626C52B55004DA119 /* Controller */ = {
@@ -118,17 +129,6 @@
 				85B454C526C29F8E004DA119 /* UrlItemModel.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		85B454EB26C52C42004DA119 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				856A372626C65DA000450A63 /* 38213-error.json */,
-				85F914B226BD0BB10065F6DF /* 47289-digital-marketing.json */,
-				85B454E026C3E80B004DA119 /* 9619-loading-dots-in-yellow.json */,
-				85B454E326C40667004DA119 /* 14906-loading-amimation.json */,
-			);
-			path = Data;
 			sourceTree = "<group>";
 		};
 		85B80CFE26CA42DB00A74743 /* CoreData */ = {
