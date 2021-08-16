@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06C2B8E53E9CF341AA9EC459 /* Pods_LinkShortenerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC2CEE37BD295709E9C3F507 /* Pods_LinkShortenerApp.framework */; };
+		8560D11426BBB8EA00111F79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8560D11326BBB8EA00111F79 /* AppDelegate.swift */; };
+		8560D11626BBB8EA00111F79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8560D11526BBB8EA00111F79 /* SceneDelegate.swift */; };
+		8560D11826BBB8EA00111F79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8560D11726BBB8EA00111F79 /* ViewController.swift */; };
+		8560D11B26BBB8EA00111F79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8560D11926BBB8EA00111F79 /* Main.storyboard */; };
+		8560D11D26BBB8EA00111F79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8560D11C26BBB8EA00111F79 /* Assets.xcassets */; };
+		8560D12026BBB8EA00111F79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8560D11E26BBB8EA00111F79 /* LaunchScreen.storyboard */; };
+		8560D12926BBC47400111F79 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8560D12826BBC47400111F79 /* DetailViewController.swift */; };
+		856A372726C65DA000450A63 /* 38213-error.json in Resources */ = {isa = PBXBuildFile; fileRef = 856A372626C65DA000450A63 /* 38213-error.json */; };
+		8597770626BC10EF00F4FA2F /* LinkListCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8597770426BC10EF00F4FA2F /* LinkListCVC.swift */; };
+		8597770726BC10EF00F4FA2F /* LinkListCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8597770526BC10EF00F4FA2F /* LinkListCVC.xib */; };
+		85B454A626C28D41004DA119 /* LinkShortenerDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85B454A426C28D41004DA119 /* LinkShortenerDataModel.xcdatamodeld */; };
+		85B454C226C29875004DA119 /* LinkListItem+CoreDataProperties copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B454C026C29875004DA119 /* LinkListItem+CoreDataProperties copy.swift */; };
+		85B454C326C29875004DA119 /* LinkListItem+CoreDataClass copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B454C126C29875004DA119 /* LinkListItem+CoreDataClass copy.swift */; };
+		85B454C626C29F8E004DA119 /* UrlItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B454C526C29F8E004DA119 /* UrlItemModel.swift */; };
+		85B454E126C3E80B004DA119 /* 9619-loading-dots-in-yellow.json in Resources */ = {isa = PBXBuildFile; fileRef = 85B454E026C3E80B004DA119 /* 9619-loading-dots-in-yellow.json */; };
+		85B454E426C40667004DA119 /* 14906-loading-amimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 85B454E326C40667004DA119 /* 14906-loading-amimation.json */; };
+		85B454ED26C52C84004DA119 /* ShortLinkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B454EC26C52C84004DA119 /* ShortLinkModel.swift */; };
+		85F914B326BD0BB10065F6DF /* 47289-digital-marketing.json in Resources */ = {isa = PBXBuildFile; fileRef = 85F914B226BD0BB10065F6DF /* 47289-digital-marketing.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		58003F56E118573A68B415B8 /* Pods-LinkShortenerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkShortenerApp.release.xcconfig"; path = "Target Support Files/Pods-LinkShortenerApp/Pods-LinkShortenerApp.release.xcconfig"; sourceTree = "<group>"; };
+		8560D11026BBB8EA00111F79 /* LinkShortenerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkShortenerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8560D11326BBB8EA00111F79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8560D11526BBB8EA00111F79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8560D11726BBB8EA00111F79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8560D11A26BBB8EA00111F79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8560D11C26BBB8EA00111F79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8560D11F26BBB8EA00111F79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8560D12126BBB8EA00111F79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8560D12826BBC47400111F79 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		856A372626C65DA000450A63 /* 38213-error.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "38213-error.json"; sourceTree = "<group>"; };
+		8597770426BC10EF00F4FA2F /* LinkListCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkListCVC.swift; sourceTree = "<group>"; };
+		8597770526BC10EF00F4FA2F /* LinkListCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinkListCVC.xib; sourceTree = "<group>"; };
+		85B454A526C28D41004DA119 /* LinkShortenerDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LinkShortenerDataModel.xcdatamodel; sourceTree = "<group>"; };
+		85B454C026C29875004DA119 /* LinkListItem+CoreDataProperties copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LinkListItem+CoreDataProperties copy.swift"; sourceTree = "<group>"; };
+		85B454C126C29875004DA119 /* LinkListItem+CoreDataClass copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LinkListItem+CoreDataClass copy.swift"; sourceTree = "<group>"; };
+		85B454C526C29F8E004DA119 /* UrlItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlItemModel.swift; sourceTree = "<group>"; };
+		85B454E026C3E80B004DA119 /* 9619-loading-dots-in-yellow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "9619-loading-dots-in-yellow.json"; sourceTree = "<group>"; };
+		85B454E326C40667004DA119 /* 14906-loading-amimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "14906-loading-amimation.json"; sourceTree = "<group>"; };
+		85B454EC26C52C84004DA119 /* ShortLinkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortLinkModel.swift; sourceTree = "<group>"; };
+		85F914B226BD0BB10065F6DF /* 47289-digital-marketing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "47289-digital-marketing.json"; sourceTree = "<group>"; };
+		AC2CEE37BD295709E9C3F507 /* Pods_LinkShortenerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkShortenerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B57BA2C0CCBA73CD325132 /* Pods-LinkShortenerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkShortenerApp.debug.xcconfig"; path = "Target Support Files/Pods-LinkShortenerApp/Pods-LinkShortenerApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8560D10D26BBB8EA00111F79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C2B8E53E9CF341AA9EC459 /* Pods_LinkShortenerApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8560D10726BBB8EA00111F79 = {
+			isa = PBXGroup;
+			children = (
+				8560D11226BBB8EA00111F79 /* LinkShortenerApp */,
+				8560D11126BBB8EA00111F79 /* Products */,
+				93A4A761EEE725AA1971A53E /* Pods */,
+				9F9888141938F8762C6B550F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8560D11126BBB8EA00111F79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8560D11026BBB8EA00111F79 /* LinkShortenerApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8560D11226BBB8EA00111F79 /* LinkShortenerApp */ = {
+			isa = PBXGroup;
+			children = (
+				85B454E726C52B5A004DA119 /* Models */,
+				85B454E626C52B55004DA119 /* Controller */,
+				8560D11326BBB8EA00111F79 /* AppDelegate.swift */,
+				8560D11526BBB8EA00111F79 /* SceneDelegate.swift */,
+				8560D11926BBB8EA00111F79 /* Main.storyboard */,
+				8560D11C26BBB8EA00111F79 /* Assets.xcassets */,
+				8560D11E26BBB8EA00111F79 /* LaunchScreen.storyboard */,
+				8560D12126BBB8EA00111F79 /* Info.plist */,
+				85B454A426C28D41004DA119 /* LinkShortenerDataModel.xcdatamodeld */,
+				85B454E826C52B61004DA119 /* ReuseableViews */,
+				85B454EB26C52C42004DA119 /* Data */,
+				85B454E926C52B87004DA119 /* Config */,
+			);
+			path = LinkShortenerApp;
+			sourceTree = "<group>";
+		};
+		85B454B226C28DF9004DA119 /* LinkListItem */ = {
+			isa = PBXGroup;
+			children = (
+				85B454C126C29875004DA119 /* LinkListItem+CoreDataClass copy.swift */,
+				85B454C026C29875004DA119 /* LinkListItem+CoreDataProperties copy.swift */,
+				85B454C526C29F8E004DA119 /* UrlItemModel.swift */,
+			);
+			path = LinkListItem;
+			sourceTree = "<group>";
+		};
+		85B454E626C52B55004DA119 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8560D11726BBB8EA00111F79 /* ViewController.swift */,
+				8560D12826BBC47400111F79 /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		85B454E726C52B5A004DA119 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				85B454EC26C52C84004DA119 /* ShortLinkModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		85B454E826C52B61004DA119 /* ReuseableViews */ = {
+			isa = PBXGroup;
+			children = (
+				8597770426BC10EF00F4FA2F /* LinkListCVC.swift */,
+				8597770526BC10EF00F4FA2F /* LinkListCVC.xib */,
+			);
+			path = ReuseableViews;
+			sourceTree = "<group>";
+		};
+		85B454E926C52B87004DA119 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				85B454B226C28DF9004DA119 /* LinkListItem */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		85B454EB26C52C42004DA119 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				856A372626C65DA000450A63 /* 38213-error.json */,
+				85F914B226BD0BB10065F6DF /* 47289-digital-marketing.json */,
+				85B454E026C3E80B004DA119 /* 9619-loading-dots-in-yellow.json */,
+				85B454E326C40667004DA119 /* 14906-loading-amimation.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		93A4A761EEE725AA1971A53E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5B57BA2C0CCBA73CD325132 /* Pods-LinkShortenerApp.debug.xcconfig */,
+				58003F56E118573A68B415B8 /* Pods-LinkShortenerApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9F9888141938F8762C6B550F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC2CEE37BD295709E9C3F507 /* Pods_LinkShortenerApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8560D10F26BBB8EA00111F79 /* LinkShortenerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8560D12426BBB8EA00111F79 /* Build configuration list for PBXNativeTarget "LinkShortenerApp" */;
+			buildPhases = (
+				47AA5A630A49FA73EF090447 /* [CP] Check Pods Manifest.lock */,
+				8560D10C26BBB8EA00111F79 /* Sources */,
+				8560D10D26BBB8EA00111F79 /* Frameworks */,
+				8560D10E26BBB8EA00111F79 /* Resources */,
+				42194BBA94B015760AF97E23 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LinkShortenerApp;
+			productName = LinkShortenerApp;
+			productReference = 8560D11026BBB8EA00111F79 /* LinkShortenerApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8560D10826BBB8EA00111F79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					8560D10F26BBB8EA00111F79 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 8560D10B26BBB8EA00111F79 /* Build configuration list for PBXProject "LinkShortenerApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8560D10726BBB8EA00111F79;
+			productRefGroup = 8560D11126BBB8EA00111F79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8560D10F26BBB8EA00111F79 /* LinkShortenerApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8560D10E26BBB8EA00111F79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				856A372726C65DA000450A63 /* 38213-error.json in Resources */,
+				85B454E126C3E80B004DA119 /* 9619-loading-dots-in-yellow.json in Resources */,
+				8560D12026BBB8EA00111F79 /* LaunchScreen.storyboard in Resources */,
+				8560D11D26BBB8EA00111F79 /* Assets.xcassets in Resources */,
+				85F914B326BD0BB10065F6DF /* 47289-digital-marketing.json in Resources */,
+				8597770726BC10EF00F4FA2F /* LinkListCVC.xib in Resources */,
+				8560D11B26BBB8EA00111F79 /* Main.storyboard in Resources */,
+				85B454E426C40667004DA119 /* 14906-loading-amimation.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42194BBA94B015760AF97E23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LinkShortenerApp/Pods-LinkShortenerApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LinkShortenerApp/Pods-LinkShortenerApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LinkShortenerApp/Pods-LinkShortenerApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47AA5A630A49FA73EF090447 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LinkShortenerApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8560D10C26BBB8EA00111F79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85B454ED26C52C84004DA119 /* ShortLinkModel.swift in Sources */,
+				85B454C326C29875004DA119 /* LinkListItem+CoreDataClass copy.swift in Sources */,
+				8560D11826BBB8EA00111F79 /* ViewController.swift in Sources */,
+				8560D11426BBB8EA00111F79 /* AppDelegate.swift in Sources */,
+				85B454C626C29F8E004DA119 /* UrlItemModel.swift in Sources */,
+				85B454A626C28D41004DA119 /* LinkShortenerDataModel.xcdatamodeld in Sources */,
+				8560D11626BBB8EA00111F79 /* SceneDelegate.swift in Sources */,
+				8597770626BC10EF00F4FA2F /* LinkListCVC.swift in Sources */,
+				85B454C226C29875004DA119 /* LinkListItem+CoreDataProperties copy.swift in Sources */,
+				8560D12926BBC47400111F79 /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8560D11926BBB8EA00111F79 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8560D11A26BBB8EA00111F79 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8560D11E26BBB8EA00111F79 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8560D11F26BBB8EA00111F79 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8560D12226BBB8EA00111F79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8560D12326BBB8EA00111F79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8560D12526BBB8EA00111F79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5B57BA2C0CCBA73CD325132 /* Pods-LinkShortenerApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9B6AFN73DR;
+				INFOPLIST_FILE = LinkShortenerApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LinkShortenerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8560D12626BBB8EA00111F79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58003F56E118573A68B415B8 /* Pods-LinkShortenerApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9B6AFN73DR;
+				INFOPLIST_FILE = LinkShortenerApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LinkShortenerApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8560D10B26BBB8EA00111F79 /* Build configuration list for PBXProject "LinkShortenerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8560D12226BBB8EA00111F79 /* Debug */,
+				8560D12326BBB8EA00111F79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8560D12426BBB8EA00111F79 /* Build configuration list for PBXNativeTarget "LinkShortenerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8560D12526BBB8EA00111F79 /* Debug */,
+				8560D12626BBB8EA00111F79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		85B454A426C28D41004DA119 /* LinkShortenerDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				85B454A526C28D41004DA119 /* LinkShortenerDataModel.xcdatamodel */,
+			);
+			currentVersion = 85B454A526C28D41004DA119 /* LinkShortenerDataModel.xcdatamodel */;
+			path = LinkShortenerDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8560D10826BBB8EA00111F79 /* Project object */;
+}
