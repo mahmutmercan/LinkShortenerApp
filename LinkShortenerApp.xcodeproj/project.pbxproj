@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		06C2B8E53E9CF341AA9EC459 /* Pods_LinkShortenerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC2CEE37BD295709E9C3F507 /* Pods_LinkShortenerApp.framework */; };
+		8510163826CA8DED000D96C0 /* LinkListItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8510163626CA8DED000D96C0 /* LinkListItem+CoreDataProperties.swift */; };
+		8510163926CA8DED000D96C0 /* LinkListItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8510163726CA8DED000D96C0 /* LinkListItem+CoreDataClass.swift */; };
 		8560D11426BBB8EA00111F79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8560D11326BBB8EA00111F79 /* AppDelegate.swift */; };
 		8560D11626BBB8EA00111F79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8560D11526BBB8EA00111F79 /* SceneDelegate.swift */; };
 		8560D11826BBB8EA00111F79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8560D11726BBB8EA00111F79 /* ViewController.swift */; };
@@ -19,8 +21,6 @@
 		8597770626BC10EF00F4FA2F /* LinkListCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8597770426BC10EF00F4FA2F /* LinkListCVC.swift */; };
 		8597770726BC10EF00F4FA2F /* LinkListCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8597770526BC10EF00F4FA2F /* LinkListCVC.xib */; };
 		85B454A626C28D41004DA119 /* LinkShortenerDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85B454A426C28D41004DA119 /* LinkShortenerDataModel.xcdatamodeld */; };
-		85B454C226C29875004DA119 /* LinkListItem+CoreDataProperties copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B454C026C29875004DA119 /* LinkListItem+CoreDataProperties copy.swift */; };
-		85B454C326C29875004DA119 /* LinkListItem+CoreDataClass copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B454C126C29875004DA119 /* LinkListItem+CoreDataClass copy.swift */; };
 		85B454C626C29F8E004DA119 /* UrlItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B454C526C29F8E004DA119 /* UrlItemModel.swift */; };
 		85B454E126C3E80B004DA119 /* 9619-loading-dots-in-yellow.json in Resources */ = {isa = PBXBuildFile; fileRef = 85B454E026C3E80B004DA119 /* 9619-loading-dots-in-yellow.json */; };
 		85B454E426C40667004DA119 /* 14906-loading-amimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 85B454E326C40667004DA119 /* 14906-loading-amimation.json */; };
@@ -30,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		58003F56E118573A68B415B8 /* Pods-LinkShortenerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkShortenerApp.release.xcconfig"; path = "Target Support Files/Pods-LinkShortenerApp/Pods-LinkShortenerApp.release.xcconfig"; sourceTree = "<group>"; };
+		8510163626CA8DED000D96C0 /* LinkListItem+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LinkListItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8510163726CA8DED000D96C0 /* LinkListItem+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LinkListItem+CoreDataClass.swift"; sourceTree = "<group>"; };
 		8560D11026BBB8EA00111F79 /* LinkShortenerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkShortenerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8560D11326BBB8EA00111F79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8560D11526BBB8EA00111F79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,8 +45,6 @@
 		8597770426BC10EF00F4FA2F /* LinkListCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkListCVC.swift; sourceTree = "<group>"; };
 		8597770526BC10EF00F4FA2F /* LinkListCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinkListCVC.xib; sourceTree = "<group>"; };
 		85B454A526C28D41004DA119 /* LinkShortenerDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LinkShortenerDataModel.xcdatamodel; sourceTree = "<group>"; };
-		85B454C026C29875004DA119 /* LinkListItem+CoreDataProperties copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LinkListItem+CoreDataProperties copy.swift"; sourceTree = "<group>"; };
-		85B454C126C29875004DA119 /* LinkListItem+CoreDataClass copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LinkListItem+CoreDataClass copy.swift"; sourceTree = "<group>"; };
 		85B454C526C29F8E004DA119 /* UrlItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlItemModel.swift; sourceTree = "<group>"; };
 		85B454E026C3E80B004DA119 /* 9619-loading-dots-in-yellow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "9619-loading-dots-in-yellow.json"; sourceTree = "<group>"; };
 		85B454E326C40667004DA119 /* 14906-loading-amimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "14906-loading-amimation.json"; sourceTree = "<group>"; };
@@ -134,8 +134,8 @@
 		85B80CFE26CA42DB00A74743 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				85B454C126C29875004DA119 /* LinkListItem+CoreDataClass copy.swift */,
-				85B454C026C29875004DA119 /* LinkListItem+CoreDataProperties copy.swift */,
+				8510163726CA8DED000D96C0 /* LinkListItem+CoreDataClass.swift */,
+				8510163626CA8DED000D96C0 /* LinkListItem+CoreDataProperties.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -303,14 +303,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				85B454ED26C52C84004DA119 /* ShortLinkModel.swift in Sources */,
-				85B454C326C29875004DA119 /* LinkListItem+CoreDataClass copy.swift in Sources */,
+				8510163826CA8DED000D96C0 /* LinkListItem+CoreDataProperties.swift in Sources */,
 				8560D11826BBB8EA00111F79 /* ViewController.swift in Sources */,
+				8510163926CA8DED000D96C0 /* LinkListItem+CoreDataClass.swift in Sources */,
 				8560D11426BBB8EA00111F79 /* AppDelegate.swift in Sources */,
 				85B454C626C29F8E004DA119 /* UrlItemModel.swift in Sources */,
 				85B454A626C28D41004DA119 /* LinkShortenerDataModel.xcdatamodeld in Sources */,
 				8560D11626BBB8EA00111F79 /* SceneDelegate.swift in Sources */,
 				8597770626BC10EF00F4FA2F /* LinkListCVC.swift in Sources */,
-				85B454C226C29875004DA119 /* LinkListItem+CoreDataProperties copy.swift in Sources */,
 				8560D12926BBC47400111F79 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
