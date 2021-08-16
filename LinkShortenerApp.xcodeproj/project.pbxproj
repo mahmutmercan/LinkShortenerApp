@@ -87,30 +87,19 @@
 		8560D11226BBB8EA00111F79 /* LinkShortenerApp */ = {
 			isa = PBXGroup;
 			children = (
-				85B454E726C52B5A004DA119 /* Models */,
+				85B80CFE26CA42DB00A74743 /* CoreData */,
+				85B454E726C52B5A004DA119 /* Model */,
+				85B80D0026CA438B00A74743 /* View */,
 				85B454E626C52B55004DA119 /* Controller */,
-				8560D11326BBB8EA00111F79 /* AppDelegate.swift */,
-				8560D11526BBB8EA00111F79 /* SceneDelegate.swift */,
+				85B80D0226CA44EE00A74743 /* Application */,
+				85B454EB26C52C42004DA119 /* Data */,
 				8560D11926BBB8EA00111F79 /* Main.storyboard */,
 				8560D11C26BBB8EA00111F79 /* Assets.xcassets */,
 				8560D11E26BBB8EA00111F79 /* LaunchScreen.storyboard */,
 				8560D12126BBB8EA00111F79 /* Info.plist */,
 				85B454A426C28D41004DA119 /* LinkShortenerDataModel.xcdatamodeld */,
-				85B454E826C52B61004DA119 /* ReuseableViews */,
-				85B454EB26C52C42004DA119 /* Data */,
-				85B454E926C52B87004DA119 /* Config */,
 			);
 			path = LinkShortenerApp;
-			sourceTree = "<group>";
-		};
-		85B454B226C28DF9004DA119 /* LinkListItem */ = {
-			isa = PBXGroup;
-			children = (
-				85B454C126C29875004DA119 /* LinkListItem+CoreDataClass copy.swift */,
-				85B454C026C29875004DA119 /* LinkListItem+CoreDataProperties copy.swift */,
-				85B454C526C29F8E004DA119 /* UrlItemModel.swift */,
-			);
-			path = LinkListItem;
 			sourceTree = "<group>";
 		};
 		85B454E626C52B55004DA119 /* Controller */ = {
@@ -122,29 +111,13 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		85B454E726C52B5A004DA119 /* Models */ = {
+		85B454E726C52B5A004DA119 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				85B454EC26C52C84004DA119 /* ShortLinkModel.swift */,
+				85B454C526C29F8E004DA119 /* UrlItemModel.swift */,
 			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		85B454E826C52B61004DA119 /* ReuseableViews */ = {
-			isa = PBXGroup;
-			children = (
-				8597770426BC10EF00F4FA2F /* LinkListCVC.swift */,
-				8597770526BC10EF00F4FA2F /* LinkListCVC.xib */,
-			);
-			path = ReuseableViews;
-			sourceTree = "<group>";
-		};
-		85B454E926C52B87004DA119 /* Config */ = {
-			isa = PBXGroup;
-			children = (
-				85B454B226C28DF9004DA119 /* LinkListItem */,
-			);
-			path = Config;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		85B454EB26C52C42004DA119 /* Data */ = {
@@ -156,6 +129,41 @@
 				85B454E326C40667004DA119 /* 14906-loading-amimation.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		85B80CFE26CA42DB00A74743 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				85B454C126C29875004DA119 /* LinkListItem+CoreDataClass copy.swift */,
+				85B454C026C29875004DA119 /* LinkListItem+CoreDataProperties copy.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		85B80D0026CA438B00A74743 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				85B80D0126CA439700A74743 /* CVC */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		85B80D0126CA439700A74743 /* CVC */ = {
+			isa = PBXGroup;
+			children = (
+				8597770426BC10EF00F4FA2F /* LinkListCVC.swift */,
+				8597770526BC10EF00F4FA2F /* LinkListCVC.xib */,
+			);
+			path = CVC;
+			sourceTree = "<group>";
+		};
+		85B80D0226CA44EE00A74743 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8560D11326BBB8EA00111F79 /* AppDelegate.swift */,
+				8560D11526BBB8EA00111F79 /* SceneDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 		93A4A761EEE725AA1971A53E /* Pods */ = {
