@@ -13,6 +13,7 @@ import Alamofire
 class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var linkTextField: UITextField!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     let error: String = "Url items could not load."
     var urlList = [LinkListItem]()
@@ -20,16 +21,10 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     var selectedUrlListItem: LinkListItem?
     var selectedItem: Result?
     var linkText: String?
-
-    
-    @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         getAllUrlItems()
-        print(urlList.count)
-        debugPrint(urlList)
-        print(urlList.first?.id)
         setupCollectionView()
     }
     
@@ -55,7 +50,6 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         return urlList.count
     }
     
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let urlItem = urlList[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LinkListCVC.identifier, for: indexPath) as! LinkListCVC
@@ -80,7 +74,6 @@ extension DetailViewController {
         collectionView.dataSource = self
         collectionView.register(LinkListCVC.nib(), forCellWithReuseIdentifier: LinkListCVC.identifier)
     }
-    
 }
 
 // Core Data Functions
@@ -99,7 +92,6 @@ extension DetailViewController {
                 self.createItem(normalUrl: item.originalLink, shortenerUrl: item.fullShortLink)
                 self.getAllUrlItems()
             }
-        
     }
     
     func getAllUrlItems(){

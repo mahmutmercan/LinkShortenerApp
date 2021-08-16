@@ -16,19 +16,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var headerLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-    
     @IBOutlet weak var subContainer: UIView!
     @IBOutlet weak var linkTextField: UITextField!
     @IBOutlet weak var shortenButton: UIButton!
     
     let animationView = AnimationView()
     let loadingAnimationView = AnimationView()
-    
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    
     var linkText: String?
-        
     var loadingView: UIView = UIView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSubContainer()
@@ -104,8 +101,6 @@ class ViewController: UIViewController {
         }
     }
 
-
-    
     func setupSubContainer() {
         shortenButton.layer.cornerRadius = 4
     }
@@ -117,9 +112,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? DetailViewController {
         }
-
     }
-    
 }
 
 extension ViewController {
