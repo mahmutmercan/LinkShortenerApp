@@ -20,19 +20,8 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N76-HW-w3j">
                         <rect key="frame" x="0.0" y="0.0" width="370" height="150"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmy-Fn-WrH">
-                                <rect key="frame" x="24" y="48" width="322" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="61F-TJ-S6h"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="O8A-Qh-g1C"/>
-                                    <constraint firstAttribute="width" constant="322" id="ylu-dA-Kbn"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" systemColor="systemBlueColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kI5-KT-bCh">
-                                <rect key="frame" x="24" y="2" width="274" height="30"/>
+                                <rect key="frame" x="24" y="-3" width="274" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="74I-Dv-KVi"/>
                                     <constraint firstAttribute="width" constant="274" id="MgR-L8-SE0"/>
@@ -58,7 +47,7 @@
                                     <action selector="copyButtonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="R6z-jS-gK4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9co-3m-2Dg">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9co-3m-2Dg">
                                 <rect key="frame" x="306" y="-8" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="33T-3E-ZkE"/>
@@ -71,6 +60,14 @@
                                     <action selector="trashButtonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="oYS-Gf-5dG"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POz-eK-aUv">
+                                <rect key="frame" x="24" y="43" width="322" height="35"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="shortenLinkButtonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ZVB-un-qfh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
@@ -79,12 +76,11 @@
                             <constraint firstAttribute="trailing" secondItem="yfI-yr-wqa" secondAttribute="trailing" constant="24" id="GZI-w6-eki"/>
                             <constraint firstItem="9co-3m-2Dg" firstAttribute="leading" secondItem="kI5-KT-bCh" secondAttribute="trailing" constant="8" id="IhF-kw-2Px"/>
                             <constraint firstItem="yfI-yr-wqa" firstAttribute="leading" secondItem="N76-HW-w3j" secondAttribute="leading" constant="24" id="SRt-2d-OHi"/>
-                            <constraint firstAttribute="trailing" secondItem="qmy-Fn-WrH" secondAttribute="trailing" constant="24" id="T1F-Xy-dn8"/>
-                            <constraint firstItem="qmy-Fn-WrH" firstAttribute="leading" secondItem="N76-HW-w3j" secondAttribute="leading" constant="24" id="UNU-uU-ed8"/>
                             <constraint firstAttribute="trailing" secondItem="9co-3m-2Dg" secondAttribute="trailing" constant="24" id="bMn-ee-Dpt"/>
-                            <constraint firstItem="yfI-yr-wqa" firstAttribute="top" secondItem="qmy-Fn-WrH" secondAttribute="bottom" constant="16" id="cYf-OY-ELQ"/>
-                            <constraint firstItem="qmy-Fn-WrH" firstAttribute="top" secondItem="kI5-KT-bCh" secondAttribute="bottom" constant="16" id="hOh-xZ-Hws"/>
-                            <constraint firstItem="qmy-Fn-WrH" firstAttribute="top" secondItem="9co-3m-2Dg" secondAttribute="bottom" constant="16" id="r2f-eU-J3L"/>
+                            <constraint firstItem="yfI-yr-wqa" firstAttribute="top" secondItem="POz-eK-aUv" secondAttribute="bottom" constant="16" id="ljk-Kd-FYC"/>
+                            <constraint firstItem="POz-eK-aUv" firstAttribute="leading" secondItem="N76-HW-w3j" secondAttribute="leading" constant="24" id="nUe-W4-Fln"/>
+                            <constraint firstAttribute="trailing" secondItem="POz-eK-aUv" secondAttribute="trailing" constant="24" id="oWB-gy-iRW"/>
+                            <constraint firstItem="POz-eK-aUv" firstAttribute="top" secondItem="kI5-KT-bCh" secondAttribute="bottom" constant="16" id="pQI-t7-GZK"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -100,7 +96,7 @@
             <connections>
                 <outlet property="copyButton" destination="yfI-yr-wqa" id="RdT-hd-V5o"/>
                 <outlet property="linkLabel" destination="kI5-KT-bCh" id="UFf-OZ-fhF"/>
-                <outlet property="shortenLinkLabel" destination="qmy-Fn-WrH" id="gWr-y5-icG"/>
+                <outlet property="shortenLinkButton" destination="POz-eK-aUv" id="Wvb-4I-7Hn"/>
             </connections>
             <point key="canvasLocation" x="321.73913043478262" y="147.99107142857142"/>
         </collectionViewCell>
