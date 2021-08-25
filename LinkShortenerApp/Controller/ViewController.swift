@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     
     private func setupAnimation() {
         animationView.animation = Animation.named("47289-digital-marketing")
-        animationView.frame = CGRect (x: 0, y: 0, width: 300, height: 300)
+        animationView.frame = CGRect (x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.width - 100)
         animationView.center = headerContainer.center
         animationView.backgroundColor = .white
         animationView.contentMode = .scaleAspectFit
