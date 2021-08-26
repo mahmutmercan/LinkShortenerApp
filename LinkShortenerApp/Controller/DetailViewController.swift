@@ -11,7 +11,7 @@ import Alamofire
 import Lottie
 
 
-class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class DetailViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITextFieldDelegate {
     
     @IBOutlet weak var linkTextField: UITextField!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -34,7 +34,22 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         super.viewDidLoad()
         getAllUrlItems()
         setupCollectionView()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        self.linkTextField.delegate = self
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+
+    
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+
     
     private func setupLoadingAnimation(name: String) {
         errorAnimationView.animation = Animation.named(name)

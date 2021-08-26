@@ -10,7 +10,7 @@ import Lottie
 import Alamofire
 import CoreData
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var headerContainer: UIView!
     @IBOutlet weak var headerLabel: UILabel!
@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var subContainer: UIView!
     @IBOutlet weak var linkTextField: UITextField!
     @IBOutlet weak var shortenButton: UIButton!
+    @IBOutlet weak var animationContainer: UIView!
     
     let animationView = AnimationView()
     let loadingAnimationView = AnimationView()
@@ -30,19 +31,45 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupSubContainer()
         setupAnimation()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
+        self.linkTextField.delegate = self
+
         // Do any additional setup after loading the view.
         
     }
     
-    private func setupAnimation() {
-        animationView.animation = Animation.named("47289-digital-marketing")
-        animationView.frame = CGRect (x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.width - 100)
-        animationView.center = headerContainer.center
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        animationView.frame = self.animationContainer.bounds
+    }
+    
+    
+
+    
+    private func setupAnimation() {        
+        animationView.animation = Animation.named("47289-digital-marketing")        
+        animationView.frame = self.animationContainer.bounds
+        print(self.animationView.frame)
+        animationContainer.addSubview(animationView)
+        self.view.layoutSubviews()
+        self.animationContainer.layoutSubviews()
         animationView.backgroundColor = .white
         animationView.contentMode = .scaleAspectFit
         animationView.loopMode = .loop
         animationView.play()
-        headerContainer.addSubview(animationView)
+        
     }
     private func setupLoadingAnimation(name: String) {
         loadingAnimationView.animation = Animation.named(name)
