@@ -34,21 +34,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         
-        self.linkTextField.delegate = self
+//        self.linkTextField.delegate = self
 
         // Do any additional setup after loading the view.
         
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.view.endEditing(true)
-        return false
-    }
-
-    @objc func dismissKeyboard() {
-        //Causes the view (or one of its embedded text fields) to resign the first responder status.
-        view.endEditing(true)
-    }
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//        self.view.endEditing(true)
+//        return false
+//    }
+//
+//    @objc func dismissKeyboard() {
+//        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+//        view.endEditing(true)
+//    }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()

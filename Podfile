@@ -6,6 +6,7 @@ target 'LinkShortenerApp' do
   use_frameworks!
 pod 'lottie-ios'
 pod 'Alamofire'
+pod 'IQKeyboardManagerSwift'
 
   # Pods for LinkShortenerApp
 
