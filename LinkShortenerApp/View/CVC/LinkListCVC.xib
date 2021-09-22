@@ -64,9 +64,6 @@
                                 <rect key="frame" x="24" y="43" width="322" height="35"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="19"/>
                                 <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="shortenLinkButtonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ZVB-un-qfh"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -96,7 +93,7 @@
             <connections>
                 <outlet property="copyButton" destination="yfI-yr-wqa" id="RdT-hd-V5o"/>
                 <outlet property="linkLabel" destination="kI5-KT-bCh" id="UFf-OZ-fhF"/>
-                <outlet property="shortenLinkButton" destination="POz-eK-aUv" id="Wvb-4I-7Hn"/>
+                <outlet property="shortenLinkButton" destination="POz-eK-aUv" id="Frc-rp-BHl"/>
             </connections>
             <point key="canvasLocation" x="321.73913043478262" y="147.99107142857142"/>
         </collectionViewCell>

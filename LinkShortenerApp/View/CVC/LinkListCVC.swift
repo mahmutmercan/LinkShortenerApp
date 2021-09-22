@@ -17,9 +17,9 @@ class LinkListCVC: UICollectionViewCell {
     
     @IBOutlet weak var linkLabel: UILabel!
     @IBOutlet weak var copyButton: UIButton!
-//    @IBOutlet weak var shortenLinkLabel: UILabel!
-    
+    @IBOutlet weak var shortenLinkLabel: UILabel!
     @IBOutlet weak var shortenLinkButton: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -30,7 +30,7 @@ class LinkListCVC: UICollectionViewCell {
     }
     
     @IBAction func copyButtonTapped(_ sender: Any) {
-//        UIPasteboard.general.string = shortenLinkLabel.text
+        UIPasteboard.general.string = shortenLinkButton.currentTitle
     }
     
     @IBAction func shortenLinkButtonTapped(_ sender: Any) {

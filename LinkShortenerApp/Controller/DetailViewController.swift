@@ -25,12 +25,6 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     var selectedItem: Result?
     var linkText: String?
     var urlList = [LinkListItem]()
-//     var urlList: [LinkListItem] = [] {
-//        didSet{
-//            collectionView.reloadData()
-//        }
-//    }
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
