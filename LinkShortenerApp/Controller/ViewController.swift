@@ -33,32 +33,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
         setupAnimation()
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
-        
-//        self.linkTextField.delegate = self
-
-        // Do any additional setup after loading the view.
-        
+                
     }
-    
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//        self.view.endEditing(true)
-//        return false
-//    }
-//
-//    @objc func dismissKeyboard() {
-//        //Causes the view (or one of its embedded text fields) to resign the first responder status.
-//        view.endEditing(true)
-//    }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         animationView.frame = self.animationContainer.bounds
     }
     
-    
-
-    
-    private func setupAnimation() {        
+    private func setupAnimation() {
         animationView.animation = Animation.named("47289-digital-marketing")        
         animationView.frame = self.animationContainer.bounds
         print(self.animationView.frame)
@@ -69,7 +52,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         animationView.contentMode = .scaleAspectFit
         animationView.loopMode = .loop
         animationView.play()
-        
     }
     private func setupLoadingAnimation(name: String) {
         loadingAnimationView.animation = Animation.named(name)

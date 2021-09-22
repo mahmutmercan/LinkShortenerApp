@@ -15,25 +15,27 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     @IBOutlet weak var linkTextField: UITextField!
     @IBOutlet weak var collectionView: UICollectionView!
-    
     @IBOutlet weak var headerView: UIView!
-    
     @IBOutlet weak var titleLabel: UILabel!
     
-    
-    
+    let errorAnimationView = AnimationView()
     let error: String = "Url items could not load."
-    var urlList = [LinkListItem]()
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var selectedUrlListItem: LinkListItem?
     var selectedItem: Result?
     var linkText: String?
-    let errorAnimationView = AnimationView()
+    var urlList = [LinkListItem]()
+//     var urlList: [LinkListItem] = [] {
+//        didSet{
+//            collectionView.reloadData()
+//        }
+//    }
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        getAllUrlItems()
         setupCollectionView()
+        getAllUrlItems()
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         self.linkTextField.delegate = self
@@ -44,13 +46,11 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         return false
     }
 
-    
     @objc func dismissKeyboard() {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
     }
 
-    
     private func setupLoadingAnimation(name: String) {
         errorAnimationView.animation = Animation.named(name)
         errorAnimationView.frame = CGRect (x: 0, y: 0, width: 300, height: 300)
@@ -61,7 +61,6 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         errorAnimationView.play()
     }
 
-    
     func removeSelectedItem(index: Int) {
         urlList.remove(at: index)
         deleteItem(item: self.selectedUrlListItem!)
@@ -83,14 +82,15 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
     
     @IBAction func shortenButtonTapped(_ sender: Any) {
         postUrlItem()
-        collectionView.reloadData()
     }
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return urlList.count
     }
-    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let urlItem = urlList[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: LinkListCVC.identifier, for: indexPath) as! LinkListCVC
@@ -110,9 +110,9 @@ class DetailViewController: UIViewController, UICollectionViewDelegate, UICollec
         }
         return cell
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 700, height: 200)
+        return CGSize(width: collectionView.layer.borderWidth, height: 200)
     }
     
 }
@@ -129,7 +129,6 @@ extension DetailViewController {
 extension DetailViewController {
     func postUrlItem() {
         linkText = linkTextField.text
-        print(linkText)
         AF.request("https://api.shrtco.de/v2/shorten?url=" + self.linkText!)
             .validate()
             .responseDecodable(of: ShortLinkModel.self) { (response) in
@@ -169,7 +168,6 @@ extension DetailViewController {
             getAllUrlItems()
         }
         catch {
-
         }
     }
 
@@ -180,7 +178,6 @@ extension DetailViewController {
             getAllUrlItems()
         }
         catch {
-
         }
     }
 }
